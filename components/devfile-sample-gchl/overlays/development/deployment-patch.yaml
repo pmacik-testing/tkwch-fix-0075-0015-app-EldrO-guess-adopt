@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-gchl
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkwch-fix-0075-0015-tenant/tkwch-fix-0075-0015-app/devfile-sample-gchl@sha256:d69902144c845777ccd833771cb8f10ea41fbd315b20585207b04d31aa5a98e1
+        name: my-nodejs
+        resources: {}
+status: {}
